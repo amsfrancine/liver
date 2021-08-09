@@ -7,7 +7,7 @@ pipeline {
             }
             steps {
                 withSonarQubeEnv('SONAR_LOCAL') {             
-                    sh "${scannerHome}/bin/sonar-scanner -e -Dsonar.projectKey=Liver -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.login=1d2f6e0cf7dc5b9616d6fd4ea70e3086786245c2"
+                    sh "${scannerHome}/bin/sonar-scanner -e -Dsonar.projectKey=Liver -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.login=fa9f3729c25471dedd0c7a3177b5ebf7ad195e6d"
                 }   
             }
         }
